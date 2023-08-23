@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif,'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    line-height: 1.5 ;
+}
+
+h1,
+h2,
+h3{
+    font-family: sans-serif,'Courier New', Courier, monospace;
+    margin: 0, 0, 5rem, 0;
+}
+
+h1{
+font-size: 5rem;
+}
+
+h2{
+font-size: 4rem;
+}
+h3{
+font-size: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nombre-sitio{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+   
+}
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+.nav-principal a {
+    color: #000000;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.nav-principal {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 55rem;
+}
+
+.contenedor-categoria {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.listado-categoria {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 2rem;
+  
+}
+
+.contenedor-enlace{
+    display: flex;
+    text-align: center;
+   
+}
+.contenedor-enlace a {
+    width: 100%;
+    padding-top: 5px;
+    height: 40px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.contenedor-enlace a:hover {
+    background-color: #037bc0;
+    border-bottom-left-radius: 2rem;
+}
+.contenido-principal h2,
+.categorias h2 {
+    text-align: center;
+}
+
+h3{
+    font-size: 3rem;
+}
+.sobre-nosotros {
+background-image: linear-gradient(to right, transparent 50%,#037bc0 50% 100% ),
+url('../img//nosotros.jpg');
+background-position: left center;
+padding: 10rem 0;
+background-repeat: no-repeat;
+background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    margin-left: 5rem;
+    color: #FFFFFF;
+    
+}
+
+.texto-nosotros{
+    grid-column: 2/s3;
+}
+
+.contenido-principal {
+   padding-top: 5rem;
+   margin-bottom: 2rem;
+}
+.producto {
+    background-color: #037bc0;
+}
+
+.texto-producto,
+.precio{
+    text-align: center;
+    color: #FFFFFF;
+}
+.texto-producto h3 {
+  margin:0;  
+}
+.texto-producto p {
+    margin:  0 0 .5rem 0;
+    padding: 2rem;
+}
+
+.texto-producto .precio{
+   font-size: 2.8rem;
+   font-weight: 900;
+}
+
+.texto-producto button {
+    background-color: #8cbc00;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-in-out;
+    
+}
+
+.texto-producto button:hover {
+    cursor: pointer;
+    background-color: #769c02;
+}
+
+.listado-producto{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+}
+.producto:nth-child(1) img{
+    height: 43rem;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(2) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(4){
+    grid-column-start:1 ;
+    grid-column-end:3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.site-footer{
+   border-top: 1px solid #e1e1e1;
+
+}
+.site-footer h3 {
+    margin-bottom: .5rem;
+}
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.footer-menu a {
+
+    display: block;
+}
+.copyrigth{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contenedor-nosotros{
+    text-align: center;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 4rem
+}
+
+.contenedor-nosotros img{
+    height:30rem;
+    width: 100%;
+    object-fit: cover;
+    
+}
